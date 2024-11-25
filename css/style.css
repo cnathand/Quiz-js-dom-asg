@@ -1,0 +1,22 @@
+.boxSize{
+    height:350px;
+    width: 400px;
+    border-radius: 1px;
+    outline-style: ridge;
+}
+
+.change-red{
+    background-color: red;
+}
+.change-blue{
+    background-color: blue;
+}
+.change-purple{
+    background-color: purple;
+}
+.change-brown{
+    background-color: brown;
+}
+.change-yellow{
+    background-color: yellow;
+}
