@@ -16,124 +16,47 @@ let changeColor = document.getElementById('changeColor');
 let box = '';
 let color = '';
 
+let colorArr = [];
+
 changeBtn.addEventListener('click', function (){
     box = boxNumber.value;
     color = changeColor.value;
     if(box == 1){
-        if(color == 'red'){
-            box1.classList.add('change-red');
-        } else if(color == 'blue'){
-            box1.classList.add('change-blue');
-        } else if(color == 'purple'){
-            box1.classList.add('change-purple');
-        } else if(color == 'brown'){
-            box1.classList.add('change-brown');
-        } else if(color == 'yellow'){
-            box1.classList.add('change-yellow');
-        } 
+
+        box1.classList.add(color.toLowerCase)
     }
     if(box == 2){
-        if(color == 'red'){
-            box2.classList.add('change-red');
-        } else if(color == 'blue'){
-            box2.classList.add('change-blue');
-        } else if(color == 'purple'){
-            box2.classList.add('change-purple');
-        } else if(color == 'brown'){
-            box2.classList.add('change-brown');
-        } else if(color == 'yellow'){
-            box2.classList.add('change-yellow');
-        } 
+        box2.classList.add(color.toLowerCase)
     }
     if(box == 3){
-        if(color == 'red'){
-            box3.classList.add('change-red');
-        } else if(color == 'blue'){
-            box3.classList.add('change-blue');
-        } else if(color == 'purple'){
-            box3.classList.add('change-purple');
-        } else if(color == 'brown'){
-            box3.classList.add('change-brown');
-        } else if(color == 'yellow'){
-            box3.classList.add('change-yellow');
-        } 
+        box3.classList.add(color.toLowerCase)
     }
     if(box == 4){
-        if(color == 'red'){
-            box4.classList.add('change-red');
-        } else if(color == 'blue'){
-            box4.classList.add('change-blue');
-        } else if(color == 'purple'){
-            box4.classList.add('change-purple');
-        } else if(color == 'brown'){
-            box4.classList.add('change-brown');
-        } else if(color == 'yellow'){
-            box4.classList.add('change-yellow');
-        } 
+        box4.classList.add(color.toLowerCase)
     }
     if(box == 5){
-        if(color == 'red'){
-            box5.classList.add('change-red');
-        } else if(color == 'blue'){
-            box5.classList.add('change-blue');
-        } else if(color == 'purple'){
-            box5.classList.add('change-purple');
-        } else if(color == 'brown'){
-            box5.classList.add('change-brown');
-        } else if(color == 'yellow'){
-            box5.classList.add('change-yellow');
-        } 
+        box5.classList.add(color.toLowerCase)
     }
     if(box == 6){
-        if(color == 'red'){
-            box6.classList.add('change-red');
-        } else if(color == 'blue'){
-            box6.classList.add('change-blue');
-        } else if(color == 'purple'){
-            box6.classList.add('change-purple');
-        } else if(color == 'brown'){
-            box6.classList.add('change-brown');
-        } else if(color == 'yellow'){
-            box6.classList.add('change-yellow');
-        } 
+        box6.classList.add(color.toLowerCase)
     }
     if(box == 7){
-        if(color == 'red'){
-            box7.classList.add('change-red');
-        } else if(color == 'blue'){
-            box7.classList.add('change-blue');
-        } else if(color == 'purple'){
-            box7.classList.add('change-purple');
-        } else if(color == 'brown'){
-            box7.classList.add('change-brown');
-        } else if(color == 'yellow'){
-            box7.classList.add('change-yellow');
-        } 
+        box7.classList.add(color.toLowerCase)
     }
     if(box == 8){
-        if(color == 'red'){
-            box8.classList.add('change-red');
-        } else if(color == 'blue'){
-            box8.classList.add('change-blue');
-        } else if(color == 'purple'){
-            box8.classList.add('change-purple');
-        } else if(color == 'brown'){
-            box8.classList.add('change-brown');
-        } else if(color == 'yellow'){
-            box8.classList.add('change-yellow');
-        } 
+        box8.classList.add(color.toLowerCase)
     }
     console.log(box);
     console.log(color);
 });
 
 resetBtn.addEventListener('click', function(){
-    box1.classList.remove('change-red', 'change-blue', 'change-purple', 'change-brown', 'change-yellow')
-    box2.classList.remove('change-red', 'change-blue', 'change-purple', 'change-brown', 'change-yellow')
-    box3.classList.remove('change-red', 'change-blue', 'change-purple', 'change-brown', 'change-yellow')
-    box4.classList.remove('change-red', 'change-blue', 'change-purple', 'change-brown', 'change-yellow')
-    box5.classList.remove('change-red', 'change-blue', 'change-purple', 'change-brown', 'change-yellow')
-    box6.classList.remove('change-red', 'change-blue', 'change-purple', 'change-brown', 'change-yellow')
-    box7.classList.remove('change-red', 'change-blue', 'change-purple', 'change-brown', 'change-yellow')
-    box8.classList.remove('change-red', 'change-blue', 'change-purple', 'change-brown', 'change-yellow')
+    box1.classList.remove(color.toLowerCase)
+    box2.classList.remove(color.toLowerCase)
+    box3.classList.remove(color.toLowerCase)
+    box4.classList.remove(color.toLowerCase)
+    box5.classList.remove(color.toLowerCase)
+    box6.classList.remove(color.toLowerCase)
+    box7.classList.remove(color.toLowerCase)
+    box8.classList.remove(color.toLowerCase)
 });
